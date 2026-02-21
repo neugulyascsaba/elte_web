@@ -116,3 +116,31 @@ nav a.active
 {
     cursor: default;
 }
+
+
+.lens
+{
+    position: relative;
+    top: .3rem;
+    width: 25%;
+    margin: auto;
+}
+.lens img
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.lens2
+{
+    position: absolute;
+    top: 0;
+    
+    opacity: 0;
+    transition: var(--transition-length);
+}
+.lens2:hover
+{
+    opacity: 1;
+    transition: var(--transition-length);
+}

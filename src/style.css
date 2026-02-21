@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Tomorrow:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root
+{
+    --bg-color: #09090A;
+    --bg-color-rgb: 9, 9, 10;
+    --bg-dark-grey-color: #0F1015;
+    --bg-light-grey-color: #393B45;
+
+    --text-color: #eee;
+    --text-muted-color: #cddbda;
+
+    --link-color: #4c6de4;
+    --link-hover-color: #76aff1;
+
+    --transition-length: 200ms;
+
+    --font: "Work Sans";
+    --font-futuristic: "Tomorrow";
+    --font-barcode: "Libre Barcode 128 Text";
+}
+
+::selection
+{
+    background-color: var(--link-hover-color);
+    color: #000;
+}
+
+body
+{
+    background-color: var(--bg-color);
+    background-image: url(./../assets/imgs/Space.jpg);
+    background-position: top;
+    background-size: cover;
+
+    color: var(--text-color);
+    font-family: var(--font);
+}
+
+section
+{
+    background-color: rgba(var(--bg-color-rgb), 0.75);
+    backdrop-filter: blur(.2rem);
+    
+    border-bottom: .1rem solid var(--bg-dark-grey-color);
+    border-top: .1rem solid var(--bg-dark-grey-color);
+    border-radius: 1rem;
+}
+
+hr
+{
+    border-top: .3rem solid var(--bg-light-grey-color);
+    border-radius: 1rem;
+}
+
+nav
+{
+    position: sticky;
+    top: 0;
+    margin: 0 4rem;
+    display: flex;
+    align-items: center;
+
+    user-select: none;
+
+    backdrop-filter: blur(.2rem);
+    border-bottom: .1rem solid var(--bg-dark-grey-color);
+    border-radius: 3rem;
+}
+nav img
+{
+    height: 4rem;
+    margin: 1rem;
+    
+    transition-duration: var(--transition-length);
+}
+nav img:hover
+{
+    transition-duration: var(--transition-length);
+    filter: drop-shadow(0 0 1rem var(--link-color));
+}
+nav ul
+{
+    display: flex;
+    gap: 3rem;
+
+    margin: 0 1rem;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+
+    background-color: var(--bg-dark-grey-color);
+}
+nav li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+nav a:link, nav a:visited
+{
+    color: var(--text-muted-color);
+    font-variant: small-caps;
+    font-size: large;
+    text-decoration: none;
+}
+nav a:hover, nav a:active
+{
+    color: var(--text-color);
+}
+nav a.active
+{
+    font-weight: bold;
+}
+
+.veryimportant
+{
+    cursor: default;
+}

@@ -28,7 +28,7 @@
 
 body
 {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color); /* Ha nem töltene be a kép, az ember nem fog megvakulni. */
     background-image: url(./../assets/imgs/Space.jpg);
     background-position: top;
     background-size: cover;
@@ -61,6 +61,7 @@ nav
     display: flex;
     align-items: center;
 
+    z-index: 1;
     user-select: none;
 
     backdrop-filter: blur(.2rem);

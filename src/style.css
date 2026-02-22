@@ -10,8 +10,9 @@
     --text-color: #eee;
     --text-muted-color: #cddbda;
 
-    --link-color: #4c6de4;
-    --link-hover-color: #76aff1;
+    --primary-dark-color: #4c6de4;
+    --primary-color: #6196e6;
+    --primary-light-color: #8fc8f7;
 
     --transition-length: 200ms;
 
@@ -22,7 +23,7 @@
 
 ::selection
 {
-    background-color: var(--link-hover-color);
+    background-color: var(--primary-color);
     color: #000;
 }
 
@@ -54,15 +55,29 @@ section header
     background-color: var(--bg-dark-grey-color);
     text-align: center;
 }
-section.content
+section p
 {
-
+    text-align: justify;
+}
+.content-border
+{
+    /* border-color: var(--bg-light-grey-color) !important; */
+    border: 1px inset var(--bg-light-grey-color);
 }
 
 hr
 {
     border-top: .3rem solid var(--bg-light-grey-color);
     border-radius: 1rem;
+}
+
+a:link, a:visited
+{
+    color: var(--primary-color);
+}
+a:hover, a:active
+{
+    color: var(--primary-light-color);
 }
 
 /* #region NAVBAR */
@@ -91,7 +106,7 @@ nav img
 nav img:hover
 {
     transition-duration: var(--transition-length);
-    filter: drop-shadow(0 0 1rem var(--link-color));
+    filter: drop-shadow(0 0 1rem var(--primary-dark-color));
 }
 nav ul
 {

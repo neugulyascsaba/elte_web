@@ -4,8 +4,8 @@
 {
     --bg-color: #09090A;
     --bg-color-rgb: 9, 9, 10;
-    --bg-dark-grey-color: #0F1015;
-    --bg-light-grey-color: #393B45;
+    --bg-dark-grey-color: #121319;
+    --bg-light-grey-color: #282a33;
 
     --text-color: #eee;
     --text-muted-color: #cddbda;
@@ -39,12 +39,24 @@ body
 
 section
 {
+    border-bottom: .15rem solid var(--bg-dark-grey-color);
+    border-top: .1rem solid var(--bg-light-grey-color);
+    border-radius: 1rem;
+    
+    overflow: hidden;
     background-color: rgba(var(--bg-color-rgb), 0.75);
     backdrop-filter: blur(.2rem);
-    
-    border-bottom: .1rem solid var(--bg-dark-grey-color);
-    border-top: .1rem solid var(--bg-dark-grey-color);
-    border-radius: 1rem;
+}
+section header
+{
+    padding: .5rem;
+
+    background-color: var(--bg-dark-grey-color);
+    text-align: center;
+}
+section.content
+{
+
 }
 
 hr
@@ -53,6 +65,7 @@ hr
     border-radius: 1rem;
 }
 
+/* #region NAVBAR */
 nav
 {
     position: sticky;
@@ -117,8 +130,9 @@ nav a.active
 {
     cursor: default;
 }
+/* #endregion */
 
-
+/* #region Lens */
 .lens
 {
     position: relative;
@@ -145,3 +159,4 @@ nav a.active
     opacity: 1;
     transition: var(--transition-length);
 }
+/* #endregion */

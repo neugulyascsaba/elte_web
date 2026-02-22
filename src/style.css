@@ -8,13 +8,13 @@
     --bg-light-grey-color: #282a33;
 
     --text-color: #eee;
-    --text-muted-color: #cddbda;
+    --text-muted-color: #adc2c5;
 
-    --primary-dark-color: #4c6de4;
+    --primary-dark-color: #334fb6; /*334fb6*/
     --primary-color: #6196e6;
     --primary-light-color: #8fc8f7;
 
-    --transition-length: 200ms;
+    --transition-length: 150ms;
 
     --font: "Work Sans";
     --font-futuristic: "Tomorrow";
@@ -57,7 +57,7 @@ section header
 }
 section p
 {
-    text-align: justify;
+    /* text-align: justify; */
 }
 .content-border
 {
@@ -65,9 +65,15 @@ section p
     border: 1px inset var(--bg-light-grey-color);
 }
 
+.footnote
+{
+    color: var(--text-muted-color);
+    text-align: end;
+}
+
 hr
 {
-    border-top: .3rem solid var(--bg-light-grey-color);
+    border-top: .3rem dashed var(--bg-light-grey-color);
     border-radius: 1rem;
 }
 
@@ -78,6 +84,45 @@ a:link, a:visited
 a:hover, a:active
 {
     color: var(--primary-light-color);
+}
+
+.cost-text
+{
+    font-family: var(--font-futuristic);
+    font-size: larger;
+    /* text-align: center; */
+    letter-spacing: .2rem;
+}
+.button
+{
+    border: none;
+    border-radius: .5rem;
+    
+    transition: var(--transition-length);
+
+    color: var(--text-color);
+    font-family: var(--font-barcode);
+    font-size: 3rem;
+}
+.buy-button
+{
+    padding: .2rem 4rem;
+    background-color: var(--primary-dark-color);
+}
+.buy-button:hover
+{
+    background-color: var(--primary-color);
+}
+.rent-button
+{
+    padding: 0 4rem;
+    border: .2rem solid var(--primary-dark-color);
+    background-color: var(--bg-color);
+}
+.rent-button:hover
+{
+    border-color: var(--primary-color);
+    background-color: var(--bg-light-grey-color);
 }
 
 /* #region NAVBAR */
@@ -147,7 +192,7 @@ nav a.active
 }
 /* #endregion */
 
-/* #region Lens */
+/* #region LENS */
 .lens
 {
     position: relative;

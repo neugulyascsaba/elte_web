@@ -3,7 +3,7 @@
 :root
 {
     --bg-color: #09090A;
-    --bg-color-rgb: 9, 9, 10;
+    --bg-color-transparent: rgba(9, 9, 10, 0.67);
     --bg-dark-grey-color: #121319;
     --bg-light-grey-color: #282a33;
 
@@ -19,6 +19,8 @@
     --font: "Work Sans";
     --font-futuristic: "Tomorrow";
     --font-barcode: "Libre Barcode 128 Text";
+
+    --bg-blur: blur(.2rem);
 }
 
 ::selection
@@ -45,8 +47,8 @@ section
     border-radius: 1rem;
     
     overflow: hidden;
-    background-color: rgba(var(--bg-color-rgb), 0.75);
-    backdrop-filter: blur(.2rem);
+    background-color: var(--bg-color-transparent);
+    backdrop-filter: var(--bg-blur);
 }
 section header
 {
@@ -137,7 +139,7 @@ nav
     z-index: 1;
     user-select: none;
 
-    backdrop-filter: blur(.2rem);
+    backdrop-filter: var(--bg-blur);
     border-bottom: .1rem solid var(--bg-dark-grey-color);
     border-radius: 3rem;
 }
@@ -220,3 +222,70 @@ nav a.active
     transition: var(--transition-length);
 }
 /* #endregion */
+
+.roadmap
+{
+    position: relative;
+    margin: 0 4rem 7rem 4rem;
+}
+.roadmap hr
+{
+    border-color: white;
+    border-style: solid;
+    opacity: .8;
+}
+.event
+{
+    position: absolute;
+    top: -.9rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+
+    background-color: var(--bg-dark-grey-color);
+    border: .5rem solid var(--primary-dark-color);
+}
+.event .event-description
+{
+    position: relative;
+    top: 2.2rem;
+    left: -3.4rem;
+    width: 8rem;
+    border-radius: .5rem;
+    
+    /* background-color: #666; */
+    background-color: var(--bg-color-transparent);
+    backdrop-filter: var(--bg-blur);
+}
+.event .event-description p
+{
+    margin: 0;
+    padding: 0 .2rem;
+
+    text-align: center;
+}
+.event .event-description p:first-of-type
+{
+    font-weight: bold;
+}
+#event1
+{
+    left: 0;
+}
+#event2
+{
+    left: calc(15%);
+}
+#event3
+{
+    left: calc(35%);
+}
+#event4
+{
+    left: calc(70% - 2rem);
+}
+#event5
+{
+    left: calc(100% - 2rem);
+}
+

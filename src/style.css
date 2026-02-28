@@ -150,6 +150,14 @@ footer address
     margin: 0;
 }
 
+/* #region The Ship */
+.carousel-item
+{
+    height: 30rem;
+    background-color: var(--bg-dark-grey-color);
+}
+/* #endregion */
+
 /* #region Offers */
 .footnote
 {

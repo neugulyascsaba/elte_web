@@ -14,6 +14,8 @@
     --primary-color: #6196e6;
     --primary-light-color: #8fc8f7;
 
+    --secondary-color: #79f0d6;
+
     --transition-length: 150ms;
 
     --font: "Work Sans";
@@ -86,6 +88,7 @@ body
     border-bottom: .15rem solid var(--bg-dark-grey-color);
     border-top: .1rem solid var(--bg-light-grey-color);
     border-radius: 1rem;
+    text-align: justify;
     
     overflow: hidden;
     background-color: var(--bg-color-transparent);
@@ -122,9 +125,13 @@ hr
 }
 
 /* Links */
-a:link, a:visited
+a:link
 {
     color: var(--primary-color);
+}
+a:visited
+{
+    color: var(--secondary-color);
 }
 a:hover, a:active
 {
@@ -151,10 +158,33 @@ footer address
 }
 
 /* #region The Ship */
-.carousel-item
+
+figure
 {
-    height: 30rem;
-    background-color: var(--bg-dark-grey-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figcaption
+{
+    margin-top: 1rem;
+
+    color: var(--text-muted-color);
+    text-align: end;
+}
+
+@media screen and (max-width: 767px)
+{
+    figure
+    {
+        display: none;
+    }
+    /* figure img
+    {
+        margin: auto;
+        height: 30rem;
+        width: fit-content;
+    } */
 }
 /* #endregion */
 

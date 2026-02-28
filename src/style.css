@@ -56,13 +56,29 @@ body
     color: var(--text-color);
     font-family: var(--font);
 }
-.high-contrast p, a, li
+.high-contrast p,
+.high-contrast a,
+.high-contrast li
 {
     font-size: large;
 }
-.high-contrast h1, h2, h3
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3
 {
     color: var(--primary-light-color);
+}
+
+#content-btn a
+{
+    position: absolute;
+    left    : -9999px;
+    margin-left: 5rem;
+    font-size: larger;
+}
+#content-btn a:focus
+{
+    position: static;
 }
 
 .section-card
@@ -150,9 +166,10 @@ a:hover, a:active
 {
     color: #000;
 }
-.high-contrast .buy-button, .high-contrast .rent-button
+.high-contrast .buy-button,
+.high-contrast .rent-button
 {
-    font-family: 'Tomorrow';
+    font-family: var(--font-futuristic);
     font-weight: bold;
 }
 .rent-button
@@ -167,8 +184,8 @@ a:hover, a:active
     background-color: var(--bg-light-grey-color);
 }
 
-/* #region NAVBAR */
-nav
+/* #region Navbar */
+#menu
 {
     position: sticky;
     top: 0;
@@ -185,26 +202,29 @@ nav
     text-wrap: nowrap;
 }
 
-nav img
+#menu img
 {
     height: 4rem;
     margin: 1rem;
     
     transition-duration: var(--transition-length);
 }
-nav img:hover
+#menu img:hover
 {
     transition-duration: var(--transition-length);
     filter: drop-shadow(0 0 1rem var(--primary-dark-color));
 }
 
+nav
+{
+    width: 100%;
+}
 nav ul
 {
     display: flex;
     gap: 3rem;
 
     margin: 0 1rem;
-    width: 100%;
     padding: .5rem 1.5rem;
     border-radius: 2rem;
 
@@ -231,7 +251,7 @@ nav a.active
     font-weight: bold;
 }
 
-nav p
+#menu p
 {
     position: relative;
     top: .5rem;
@@ -254,7 +274,7 @@ nav p
 }
 /* #endregion */
 
-/* #region LENS */
+/* #region Lens images */
 .lens
 {
     position: relative;
@@ -283,7 +303,7 @@ nav p
 }
 /* #endregion */
 
-/* #region ROADMAP */
+/* #region Roadmap */
 .event .event-description p:first-of-type
 {
     font-weight: bold;
@@ -430,6 +450,20 @@ nav p
     #event5
     {
         left: calc(100% - 2rem);
+    }
+}
+/* #endregion */
+
+/* #region Print */
+@media print
+{
+    .dont-print
+    {
+        display: none;
+    }
+    .rent-button
+    {
+        border: none;
     }
 }
 /* #endregion */

@@ -8,25 +8,30 @@
         <link rel="stylesheet" href="src/style.css">
         <link rel="shortcut icon" href="assets/imgs/Icon.png" type="image/x-icon">
 
-        <title>Skyrocket&reg;</title>
+        <title>Home - Skyrocket&reg;</title>
     </head>
     <body>
-        <nav>
+        <nav id="content-btn">
+            <a href="#content">Skip to content</a>
+        </nav>
+        <header id="menu">
             <img src="assets/imgs/Logo.png" alt="The logo of Skyrocket&reg;">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="ship.html">The Ship</a></li>
-                <li><a href="software.html">The Software</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="ship.html">The Ship</a></li>
+                    <li><a href="software.html">The Software</a></li>
+                </ul>
+            </nav>
             <p>High contrast</p>
             <button id="high-contrast-btn" title="High contrast mode">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
                     <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
                 </svg>
             </button>
-        </nav>
+        </header>
 
-        <main class="container">
+        <main id="content" class="container">
             <div class="row g-3 border-xl">
 
                 <div class="col col-12">
@@ -76,7 +81,7 @@
                             </div>
                         </article>
                         <article class="event" id="event-current">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-caret-right-fill dont-print" viewBox="0 0 16 16">
                                 <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                             </svg>
                             <div class="event-description">
@@ -112,8 +117,8 @@
                                 <p>The Flux Overflow class deep space unmanned mining-transportation space vehicle is the <strong>most cost-efficient</strong> ship on the market.</p>
                                 <ul>
                                     <li><a href="https://en.wikipedia.org/wiki/Nuclear_thermal_rocket" target="_blank">NTR propulsion</a></li>
-                                    <li>AI & manual control</li>
-                                    <li>20 km/s &Delta;v</li>
+                                    <li><abbr title="Artificial Intelligence">AI</abbr> & manual control</li>
+                                    <li>20 km/s <abbr title="Change in velocity">&Delta;v</abbr></li>
                                     <li>Push & tug engine modes</li>
                                     <li>Retractable radiators</li>
                                 </ul>
@@ -122,14 +127,14 @@
                     </section>
                 </div>
 
-                <div class="col col-6 mx-auto col-xl-4">
+                <div class="col col-md-6 mx-auto col-xl-4">
                     <section class="section-card">
                         <header>
                             <h2>Our Offers</h2>
                         </header>
                         <div class="px-4 pt-2">
                             <p class="mb-0">Now <strong>only</strong></p>
-                            <p class="ms-5 mb-2"><span class="cost-text"><strong>$4 200M</strong></span> per ship</p>
+                            <p class="ms-5 mb-2"><span class="cost-text"><strong>$4200M</strong></span> per ship</p>
                             <button class="button buy-button ms-5">BUY</button>
                             <hr>
                             <p class="mb-0">Or rent it for</p>

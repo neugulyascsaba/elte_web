@@ -403,29 +403,31 @@ nav a.active
 /* #region Lens images */
 .lens
 {
+    padding: 0;
     position: relative;
-    top: .3rem;
-    width: 25%;
+    bottom: -1rem;
+    display: block;
     margin: auto;
+    width: 33%;
 }
 .lens img
 {
-    width: 100%;
     display: block;
+    width: 100%;
     margin: auto;
 }
-.lens2
+.lens img:last-of-type
 {
     position: absolute;
     top: 0;
-    
+    left: 0;
+
     opacity: 0;
     transition: var(--transition-length);
 }
-.lens2:hover
+.lens img:last-of-type:hover
 {
     opacity: 1;
-    transition: var(--transition-length);
 }
 /* #endregion */
 

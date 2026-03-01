@@ -1,5 +1,7 @@
+/* Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Tomorrow:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* #region Variables */
 :root
 {
     --bg-color: #09090A;
@@ -37,7 +39,9 @@
     --primary-color: #ffa600;
     --primary-light-color: #ffee00;
 }
+/* #endregion */
 
+/* #region Global */
 ::selection
 {
     background-color: var(--primary-color);
@@ -70,6 +74,7 @@ body
 {
     color: var(--primary-light-color);
 }
+/* #endregion */
 
 #content-btn a
 {
@@ -330,18 +335,10 @@ caption
     border-radius: 3rem;
     text-wrap: nowrap;
 }
-
 #menu img
 {
     height: 4rem;
     margin: 1rem;
-    
-    transition-duration: var(--transition-length);
-}
-#menu img:hover
-{
-    transition-duration: var(--transition-length);
-    filter: drop-shadow(0 0 1rem var(--primary-dark-color));
 }
 
 nav

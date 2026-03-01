@@ -31,125 +31,139 @@
             </button>
         </header>
 
-        <main id="content" class="container">
+        <main id="content" class="container-fluid mt-5 px-5">
 
-            <article class="section-card row">
-                <figure class="col col-12 col-md-4">
-                    <img src="assets/imgs/EnginePiping.jpg" alt="Image of the engine" class="rounded content-border">
-                    <figcaption>The piping of the prototype above the engine nozzle.</figcaption>
-                </figure>
-                <div class="col col-12 col-md-8 pt-3">
-                    <h2>Dual NTR Propulsion System</h2>
-                    <p>The Flux Overflow is powered by two high-efficiency <a href="https://en.wikipedia.org/wiki/Nuclear_thermal_rocket" target="_blank">Nuclear Thermal Rocket (NTR)</a> engines mounted on independent 180° gimbal rings. Each engine can rotate from forward thrust (acceleration) to reverse thrust (deceleration or push-mode operations) without reorienting the spacecraft.</p>
-                    <ul>
-                        <li>Propellant: Liquid hydrogen</li>
-                        <li><abbr title="Specific Impulse">I<sub>sp</sub></abbr>: 925-960 s (vacuum)</li>
-                        <li>Thrust (per engine): 1.8 MN</li>
-                        <li>Combined Thrust: 3.6 MN</li>
-                        <li>Max Ship Acceleration (fully fueled): ~0.35 g</li>
-                        <li><abbr title="Change in velocity">&Delta;v</abbr> Capacity: 20 km/s</li>
-                    </ul>
-                    <p>Hydrogen propellant is superheated in a high-temperature reactor core and expelled through composite carbon-carbon nozzles. The high exhaust velocity enables exceptional deep-space maneuverability while maintaining unmatched fuel economy.</p>
-                    <p>The engines are rated for 18,000 operational hours and include autonomous restart capability after cold soak periods exceeding 5 years.</p>
-                </div>
-            </article>
+            <section class="row gx-5 gy-4">
 
-            <article class="section-card row">
-                <figure class="col col-12 col-md-4">
-                    <img src="assets/imgs/ReactorInside.jpg" alt="Image of the reactor from the inside" class="rounded content-border">
-                    <figcaption>The <a href="https://en.wikipedia.org/wiki/Cherenkov_radiation" target="_blank">Cherenkov radiation</a> lighting up the coolant inside of the reactor.</figcaption>
-                </figure>
-                <div class="col col-12 col-md-8 pt-3">
-                    <h2>Spherical Fission Reactor</h2>
-                    <p>At the bottom of the spacecraft lies a 14-meter diameter spherical reactor module. The geometry ensures uniform neutron flux distribution and maximum structural integrity under sustained output.</p>
-                    <ul>
-                        <li>Thermal Power: 4.5 GW</li>
-                        <li>Electrical Output: 1.2 GW</li>
-                        <li>Engine Feed: Direct thermal coupling to engine cores</li>
-                        <li>Laser Allocation Capacity: Up to 800 MW continuous</li>
-                    </ul>
-                    <p>The reactor supplies heat directly to the NTR engines during propulsion phases. During cruise or mining operations, power is diverted to the laser array and onboard systems.</p>
-                    <p>Triple-redundant magnetic control drums regulate reactivity. In the event of catastrophic fault detection, the reactor can enter a passively stable subcritical configuration in under 0.8 seconds.</p>
-                    <p>The spherical exterior houses layered neutron reflectors and boron-carbide control assemblies, providing both efficiency and containment reliability for decades of continuous operation.</p>
+                <div class="col col-12 col-xxl-6">
+                    <article class="section-card row">
+                        <figure class="col col-12 col-md-4 col-xxl-5">
+                            <img src="assets/imgs/EnginePiping.jpg" alt="Image of the engine" class="rounded content-border" draggable="false">
+                            <figcaption class="rounded">The piping of the prototype above the engine nozzle.</figcaption>
+                        </figure>
+                        <section class="col col-12 col-md-8 col-xxl-7 pt-3 pe-4">
+                            <h2>Dual NTR Propulsion System</h2>
+                            <p>The Flux Overflow is powered by two high-efficiency <a href="https://en.wikipedia.org/wiki/Nuclear_thermal_rocket" target="_blank">Nuclear Thermal Rocket (NTR)</a> engines mounted on independent 180° gimbal rings. Each engine can rotate from forward thrust (acceleration) to reverse thrust (deceleration or push-mode operations) without reorienting the spacecraft.</p>
+                            <ul>
+                                <li><abbr title="Change in velocity">&Delta;v</abbr> Capacity: 20 km/s</li>
+                            </ul>
+                            <details>
+                                <summary>The propellant is liquid hydrogen.</summary>
+                                <p>Hydrogen propellant is superheated in a high-temperature reactor core and expelled through composite carbon-carbon nozzles. The high exhaust velocity enables exceptional deep-space maneuverability while maintaining unmatched fuel economy.</p>
+                                <p>The engines are rated for 18,000 operational hours and include autonomous restart capability after cold soak periods exceeding 5 years.</p>
+                            </details>
+                        </section>
+                    </article>
                 </div>
-            </article>
 
-            <article class="section-card row">
-                <figure class="col col-12 col-md-4">
-                    <img src="assets/imgs/RadiationShieldingTiles.jpg" alt="Image of the radiation shielding tiles" class="rounded content-border">
-                    <figcaption>The shield is composed of tiles.</figcaption>
-                </figure>
-                <div class="col col-12 col-md-8 pt-3">
-                    <h2>Radiation Shielding</h2>
-                    <p>Designed for deep-space nuclear operations, the shielding system protects both onboard electronics and any maintenance crew during rare crewed servicing missions.</p>
-                    <p class="mb-0">Composition:</p>
-                    <ul>
-                        <li>Tungsten-boron carbide neutron absorber lattice</li>
-                        <li>1.8 meters of cryogenic hydrogen tank shadow shielding</li>
-                        <li>High-density polyethylene proton attenuation layer</li>
-                        <li>Electromagnetic plasma deflection grid (active mode)</li>
-                    </ul>
-                    <p class="mb-0">Radiation Attenuation:</p>
-                    <ul>
-                        <li>Reduces reactor-forward neutron flux by >99.97%</li>
-                        <li>Gamma attenuation factor: 1:4,500</li>
-                    </ul>
-                    <p>The ship is primarily unmanned, but shielding ensures electronic systems experience radiation levels comparable to high Earth orbit satellites.</p>
+                <div class="col col-12 col-xxl-6">
+                    <article class="section-card row">
+                        <section class="col col-12 col-md-8 col-xxl-7 pt-3 pe-4">
+                            <h2>Spherical Fission Reactor</h2>
+                            <p>At the bottom of the spacecraft lies a 14-meter diameter spherical reactor module. The geometry ensures uniform neutron flux distribution and maximum structural integrity under sustained output.</p>
+                            <ul>
+                                <li>Thermal Power: 4.5 GW</li>
+                                <li>Electrical Output: 1.2 GW</li>
+                                <li>Engine Feed: Direct thermal coupling to engine cores</li>
+                                <li>Laser Allocation Capacity: Up to 800 MW continuous</li>
+                            </ul>
+                            <p>The reactor supplies heat directly to the NTR engines during propulsion phases. During cruise or mining operations, power is diverted to the laser array and onboard systems.</p>
+                            <p>Triple-redundant magnetic control drums regulate reactivity. In the event of catastrophic fault detection, the reactor can enter a passively stable subcritical configuration in under 0.8 seconds.</p>
+                            <p>The spherical exterior houses layered neutron reflectors and boron-carbide control assemblies, providing both efficiency and containment reliability for decades of continuous operation.</p>
+                        </section>
+                        <figure class="col col-12 col-md-4 col-xxl-5">
+                            <img src="assets/imgs/ReactorInside.jpg" alt="Image of the reactor from the inside" class="rounded content-border">
+                            <figcaption>The <a href="https://en.wikipedia.org/wiki/Cherenkov_radiation" target="_blank">Cherenkov radiation</a> lighting up the coolant inside of the reactor.</figcaption>
+                        </figure>
+                    </article>
                 </div>
-            </article>
 
-            <article class="section-card row">
-                <figure class="col col-12 col-md-3">
-                    <img src="assets/imgs/StructureLitteredWithAntennas.jpg" alt="Image of the truss littered with antennas" class="rounded content-border">
-                    <figcaption>The truss contains antennas and sensors with the only blindspot being behind the shield.</figcaption>
-                </figure>
-                <div class="col col-12 col-md-9 pt-3">
-                    <h2>Structural Truss & Systems Core</h2>
-                    <p>The primary structure is a long carbon-titanium composite truss extending between propulsion and payload interface. The open wireframe geometry minimizes mass while maximizing rigidity.</p>
-                    <p>Cryogenic propellant and coolant tanks are mounted internally within the truss lattice for impact protection and thermal stability. At the structural midpoint lies a hardened supercomputer, a navigation and optimization array controlled by our in-house <abbr title="Artificial Intelligence">AI</abbr>.</p>
-                    <p>The physical separation between reactor, computation core, and engines minimizes vibrational and radiation interference.</p>
+                <div class="col col-12 col-xxl-6">
+                    <article class="section-card row">
+                        <section class="col col-12 col-md-8 pt-3 pe-4">
+                            <h2>Radiation Shielding</h2>
+                            <p>Designed for deep-space nuclear operations, the shielding system protects both onboard electronics and any maintenance crew during rare crewed servicing missions.</p>
+                            <p class="mb-0">Composition:</p>
+                            <ul>
+                                <li>Tungsten-boron carbide neutron absorber lattice</li>
+                                <li>1.8 meters of cryogenic hydrogen tank shadow shielding</li>
+                                <li>High-density polyethylene proton attenuation layer</li>
+                                <li>Electromagnetic plasma deflection grid (active mode)</li>
+                            </ul>
+                            <p class="mb-0">Radiation Attenuation:</p>
+                            <ul>
+                                <li>Reduces reactor-forward neutron flux by >99.97%</li>
+                                <li>Gamma attenuation factor: 1:4,500</li>
+                            </ul>
+                            <p>The ship is primarily unmanned, but shielding ensures electronic systems experience radiation levels comparable to high Earth orbit satellites.</p>
+                        </section>
+                        <figure class="col col-12 col-md-4">
+                            <img src="assets/imgs/RadiationShieldingTiles.jpg" alt="Image of the radiation shielding tiles" class="rounded content-border">
+                            <figcaption>The shield is composed of tiles.</figcaption>
+                        </figure>
+                    </article>
                 </div>
-            </article>
 
-            <article class="section-card row">
-                <figure class="col col-12 col-md-3">
-                    <img src="assets/imgs/MoltenCoolant.jpg" alt="Image of the molten coolant" class="rounded content-border">
-                    <figcaption>Molten lithium that flows inside the radiators.</figcaption>
-                </figure>
-                <div class="col col-12 col-md-9 pt-3">
-                    <h2>Retractable Radiator Array</h2>
-                    <p>Waste heat rejection in vacuum is mission-critical. The class uses four enormous folding radiator wings extending up to 180 meters when fully deployed.</p>
-                    <p>The cooling system relies on a liquid lithium primary loop, paired with a secondary helium-xenon Brayton cycle, allowing a maximum heat rejection of 3.8 GW under full deployment, while a retracted emergency mode can handle up to 450 MW.</p>
-                    <p>The radiators use graphene-reinforced carbon panels with micro-channeled flow paths to maximize surface area. During high-thrust burns, the radiators deploy partially to balance structural stress and thermal efficiency.</p>
-                    <p>When retracted, armored composite shutters protect panels from debris during asteroid operations.</p>
+                <div class="col col-12 col-xxl-6">
+                    <article class="section-card row">
+                        <figure class="col col-12 col-md-3">
+                            <img src="assets/imgs/StructureLitteredWithAntennas.jpg" alt="Image of the truss littered with antennas" class="rounded content-border">
+                            <figcaption>The truss contains antennas and sensors with the only blindspot being behind the shield.</figcaption>
+                        </figure>
+                        <section class="col col-12 col-md-9 pt-3 pe-4">
+                            <h2>Structural Truss & Systems Core</h2>
+                            <p>The primary structure is a long carbon-titanium composite truss extending between propulsion and payload interface. The open wireframe geometry minimizes mass while maximizing rigidity.</p>
+                            <p>Cryogenic propellant and coolant tanks are mounted internally within the truss lattice for impact protection and thermal stability. At the structural midpoint lies a hardened supercomputer, a navigation and optimization array controlled by our in-house <abbr title="Artificial Intelligence">AI</abbr>.</p>
+                            <p>The physical separation between reactor, computation core, and engines minimizes vibrational and radiation interference.</p>
+                        </section>
+                    </article>
                 </div>
-            </article>
 
-            <article class="section-card row">
-                <figure class="col col-12 col-md-5">
-                    <img src="assets/imgs/LaserLens.jpg" alt="Image of the laser lens" class="rounded content-border">
-                    <figcaption>Molten lithium that flows inside the radiators.</figcaption>
-                </figure>
-                <div class="col col-12 col-md-7 pt-3">
-                    <h2>High-Energy Industrial Laser Beam</h2>
-                    <p>The forward-mounted phased laser array is the ship's primary mining and asteroid manipulation tool.</p>
-                    <p class="mb-0">Laser Specifications:</p>
-                    <ul>
-                        <li>Continuous Output: 800 MW</li>
-                        <li>Peak Pulse Output: 2.4 GW</li>
-                        <li>Effective Range (Ablation): 1,200 km</li>
-                        <li>Spot Precision: &lt;5 cm at 500 km</li>
-                    </ul>
-                    <p class="mb-0">Secondary Functions:</p>
-                    <ul>
-                        <li>Deep-space optical communication</li>
-                        <li>Long-range <abbr title="Laser imaging, detection, and ranging">LIDAR</abbr> mapping</li>
-                        <li>Debris fragmentation</li>
-                    </ul>
-                    <p>The laser alters asteroid trajectories by controlled surface ablation. Melted material resolidifies into thrust-optimized geometry, allowing efficient push operations using minimal propellant.</p>
-                    <p>The phased array can operate in precision low-power mode for communication across millions of kilometers with negligible beam divergence.</p>
+                <div class="col col-12 col-xxl-6">
+                    <article class="section-card row">
+                        <figure class="col col-12 col-md-3">
+                            <img src="assets/imgs/MoltenCoolant.jpg" alt="Image of the molten coolant" class="rounded content-border">
+                            <figcaption>Molten lithium that flows inside the radiators.</figcaption>
+                        </figure>
+                        <section class="col col-12 col-md-9 pt-3 pe-4">
+                            <h2>Retractable Radiator Array</h2>
+                            <p>Waste heat rejection in vacuum is mission-critical. The class uses four enormous folding radiator wings extending up to 180 meters when fully deployed.</p>
+                            <p>The cooling system relies on a liquid lithium primary loop, paired with a secondary helium-xenon Brayton cycle, allowing a maximum heat rejection of 3.8 GW under full deployment, while a retracted emergency mode can handle up to 450 MW.</p>
+                            <p>The radiators use graphene-reinforced carbon panels with micro-channeled flow paths to maximize surface area. During high-thrust burns, the radiators deploy partially to balance structural stress and thermal efficiency.</p>
+                            <p>When retracted, armored composite shutters protect panels from debris during asteroid operations.</p>
+                        </section>
+                    </article>
                 </div>
-            </article>
+
+                <div class="col col-12 col-xxl-6">
+                    <article class="section-card row">
+                        <section class="col col-12 col-md-7 pt-3 pe-4">
+                            <h2>High-Energy Industrial Laser Beam</h2>
+                            <p>The forward-mounted phased laser array is the ship's primary mining and asteroid manipulation tool.</p>
+                            <p class="mb-0">Laser Specifications:</p>
+                            <ul>
+                                <li>Continuous Output: 800 MW</li>
+                                <li>Peak Pulse Output: 2.4 GW</li>
+                                <li>Effective Range (Ablation): 1,200 km</li>
+                                <li>Spot Precision: &lt;5 cm at 500 km</li>
+                            </ul>
+                            <p class="mb-0">Secondary Functions:</p>
+                            <ul>
+                                <li>Deep-space optical communication</li>
+                                <li>Long-range <abbr title="Laser imaging, detection, and ranging">LIDAR</abbr> mapping</li>
+                                <li>Debris fragmentation</li>
+                            </ul>
+                            <p>The laser alters asteroid trajectories by controlled surface ablation. Melted material resolidifies into thrust-optimized geometry, allowing efficient push operations using minimal propellant.</p>
+                            <p>The phased array can operate in precision low-power mode for communication across millions of kilometers with negligible beam divergence.</p>
+                        </section>
+                        <figure class="col col-12 col-md-5">
+                            <img src="assets/imgs/LaserLens.jpg" alt="Image of the laser lens" class="rounded content-border">
+                            <figcaption>Molten lithium that flows inside the radiators.</figcaption>
+                        </figure>
+                    </article>
+                </div>
+
+            </section>
             
         </main>
 

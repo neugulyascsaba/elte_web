@@ -88,11 +88,15 @@ body
     border-bottom: .15rem solid var(--bg-dark-grey-color);
     border-top: .1rem solid var(--bg-light-grey-color);
     border-radius: 1rem;
-    text-align: justify;
+    height: 100%;
     
     overflow: hidden;
     background-color: var(--bg-color-transparent);
     backdrop-filter: var(--bg-blur);
+}
+.section-card p
+{
+    text-align: justify;
 }
 .high-contrast .section-card
 {
@@ -158,7 +162,6 @@ footer address
 }
 
 /* #region The Ship */
-
 figure
 {
     display: flex;
@@ -172,20 +175,31 @@ figcaption
     color: var(--text-muted-color);
     text-align: end;
 }
-
 @media screen and (max-width: 767px)
 {
     figure
     {
-        display: none;
+        position: relative;
+        max-height: 10rem;
+        overflow: hidden;
     }
-    /* figure img
+    figcaption
     {
-        margin: auto;
-        height: 30rem;
-        width: fit-content;
-    } */
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        width: 80%;
+
+        color: var(--text-color);
+        text-align: start;
+        background-color: var(--bg-color-transparent);
+        backdrop-filter: var(--bg-blur);
+    }
 }
+
+
 /* #endregion */
 
 /* #region Offers */

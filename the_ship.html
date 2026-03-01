@@ -6,7 +6,7 @@
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="src/style.css">
-        <link rel="shortcut icon" href="assets/imgs/Icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/imgs/Icon.png" type="image/x-icon">
 
         <title>The Ship - Skyrocket&reg;</title>
     </head>
@@ -15,7 +15,9 @@
             <a href="#content">Skip to content</a>
         </nav>
         <header id="menu">
-            <img src="assets/imgs/Logo.png" alt="The logo of Skyrocket&reg;">
+            <a href="index.html">
+                <img src="./assets/imgs/Logo.png" alt="Image of the logo of Skyrocket&reg;" id="logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,18 +40,24 @@
                 <div class="col col-12 col-xxl-6">
                     <article class="section-card row">
                         <figure class="col col-12 col-md-4 col-xxl-5">
-                            <img src="assets/imgs/EnginePiping.jpg" alt="Image of the engine" class="rounded content-border" draggable="false">
+                            <img src="./assets/imgs/EnginePiping.jpg" alt="Image of the engine piping" class="rounded content-border" draggable="false">
                             <figcaption class="rounded">The piping of the prototype above the engine nozzle.</figcaption>
                         </figure>
                         <section class="col col-12 col-md-8 col-xxl-7 pt-3 pe-4">
                             <h2>Dual NTR Propulsion System</h2>
                             <p>The Flux Overflow is powered by two high-efficiency <a href="https://en.wikipedia.org/wiki/Nuclear_thermal_rocket" target="_blank">Nuclear Thermal Rocket (NTR)</a> engines mounted on independent 180° gimbal rings. Each engine can rotate from forward thrust (acceleration) to reverse thrust (deceleration or push-mode operations) without reorienting the spacecraft.</p>
                             <table class="mb-3">
-                                <caption>Engine Specifications</caption>
+                                <caption>
+                                    <details>
+                                        <summary>Engine Specifications</summary>
+                                        <p>The table contains information about the performance of both the engine and the dual engine.</p>
+                                    </details>
+                                </caption>
                                 <thead>
                                     <tr>
-                                        <th colspan="2" scope="col">1 Engine</th>
-                                        <th scope="col">2 Engines</th>
+                                        <th></th>
+                                        <th scope="col">1 Engine</th>
+                                        <th scope="col">Dual Engines</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -101,7 +109,7 @@
                             </details>
                         </section>
                         <figure class="col col-12 col-md-4 col-xxl-5">
-                            <img src="assets/imgs/ReactorInside.jpg" alt="Image of the reactor from the inside" class="rounded content-border">
+                            <img src="./assets/imgs/ReactorInside.jpg" alt="Image of the reactor from the inside" class="rounded content-border">
                             <figcaption>The <a href="https://en.wikipedia.org/wiki/Cherenkov_radiation" target="_blank">Cherenkov radiation</a> lighting up the coolant inside of the reactor.</figcaption>
                         </figure>
                     </article>
@@ -127,7 +135,7 @@
                             <p>The ship is primarily unmanned, but shielding ensures electronic systems experience radiation levels comparable to high Earth orbit satellites.</p>
                         </section>
                         <figure class="col col-12 col-md-4">
-                            <img src="assets/imgs/RadiationShieldingTiles.jpg" alt="Image of the radiation shielding tiles" class="rounded content-border">
+                            <img src="./assets/imgs/RadiationShieldingTiles.jpg" alt="Image of the radiation shielding tiles" class="rounded content-border">
                             <figcaption>The shield is composed of tiles.</figcaption>
                         </figure>
                     </article>
@@ -136,7 +144,7 @@
                 <div class="col col-12 col-xxl-5">
                     <article class="section-card row">
                         <figure class="col col-12 col-md-4">
-                            <img src="assets/imgs/StructureLitteredWithAntennas.jpg" alt="Image of the truss littered with antennas" class="rounded content-border">
+                            <img src="./assets/imgs/StructureLitteredWithAntennas.jpg" alt="Image of the truss littered with antennas" class="rounded content-border">
                             <figcaption>The truss contains antennas and sensors, the only blindspot's behind the shield.</figcaption>
                         </figure>
                         <section class="col col-12 col-md-8 pt-3 pe-4">
@@ -151,7 +159,7 @@
                 <div class="col col-12 col-xxl-5">
                     <article class="section-card row">
                         <figure class="col col-12 col-md-3">
-                            <img src="assets/imgs/MoltenCoolant.jpg" alt="Image of the molten coolant" class="rounded content-border">
+                            <img src="./assets/imgs/MoltenCoolant.jpg" alt="Image of the molten coolant" class="rounded content-border">
                             <figcaption>Molten lithium that flows inside the radiators.</figcaption>
                         </figure>
                         <section class="col col-12 col-md-9 pt-3 pe-4">
@@ -186,7 +194,7 @@
                             <p>The phased array can operate in precision low-power mode for communication across millions of kilometers with negligible beam divergence.</p>
                         </section>
                         <figure class="col col-12 col-md-5">
-                            <img src="assets/imgs/LaserLens.jpg" alt="Image of the laser lens" class="rounded content-border">
+                            <img src="./assets/imgs/LaserLens.jpg" alt="Image of the laser lens" class="rounded content-border">
                             <figcaption>Molten lithium that flows inside the radiators.</figcaption>
                         </figure>
                     </article>

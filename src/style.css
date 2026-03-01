@@ -24,9 +24,9 @@
     --font-size-large: 1.125rem;
     --font-size-giga: 3rem;
 
-    --font: "Work Sans";
-    --font-futuristic: "Tomorrow";
-    --font-barcode: "Libre Barcode 128 Text";
+    --font: "Work Sans", Arial, sans-serif;
+    --font-futuristic: "Tomorrow", Arial, sans-serif;
+    --font-barcode: "Libre Barcode 128 Text", Arial, sans-serif;
 
     --bg-blur: blur(.2rem);
 
@@ -188,6 +188,14 @@ video
     width: 100%;
 }
 
+.zoom-image:hover img
+{
+    opacity: .8;
+    border: 1px solid white;
+
+    cursor: zoom-in;
+}
+
 /* #region About Us */
 form
 {
@@ -201,7 +209,6 @@ input, textarea
     border-top: .1rem solid var(--bg-light-grey-color);
     border-bottom: .15rem solid var(--bg-light-grey-color);
     border-radius: .5rem;
-    width: 100%;
     max-width: 40rem;
 
     color: var(--text-color);
@@ -209,7 +216,8 @@ input, textarea
 }
 textarea
 {
-    min-height: 10rem;
+    width: 100%;
+    min-height: 7rem;
 }
 ::placeholder
 {
@@ -322,8 +330,7 @@ tbody td
 }
 caption
 {
-    color: var(--text-muted-color);
-    text-align: end;
+    color: var(--text-color);
 }
 
 @media print
@@ -414,6 +421,12 @@ caption
     border-radius: 3rem;
     text-wrap: nowrap;
 }
+#logo:hover
+{
+    transition: var(--transition-length);
+    opacity: .9;
+    filter: drop-shadow(0 0 1.5rem var(--primary-dark-color));
+}
 #menu img
 {
     height: 4rem;
@@ -427,7 +440,7 @@ nav
 nav ul
 {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 
     margin: 0 1rem;
     padding: .5rem 1.5rem;
@@ -442,6 +455,9 @@ nav li
 }
 nav a:link, nav a:visited
 {
+    padding: 0 1rem;
+    border-radius: 1rem;
+
     color: var(--text-muted-color);
     font-variant: small-caps;
     font-size: var(--font-size-large);
@@ -454,6 +470,7 @@ nav a:hover, nav a:active
 nav a.active
 {
     font-weight: bold;
+    border: .1rem solid var(--text-muted-color);
 }
 
 #menu p

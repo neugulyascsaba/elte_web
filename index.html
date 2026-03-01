@@ -6,7 +6,7 @@
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="src/style.css">
-        <link rel="shortcut icon" href="assets/imgs/Icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/imgs/Icon.png" type="image/x-icon">
 
         <title>Home - Skyrocket&reg;</title>
     </head>
@@ -15,7 +15,9 @@
             <a href="#content">Skip to content</a>
         </nav>
         <header id="menu">
-            <img src="assets/imgs/Logo.png" alt="The logo of Skyrocket&reg;">
+            <a href="index.html">
+                <img src="./assets/imgs/Logo.png" alt="Image of the logo of Skyrocket&reg;" id="logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -35,27 +37,32 @@
             <div class="row g-3 border-xl">
 
                 <div class="d-none d-lg-block lens">
-                    <img src="assets/imgs/Lens.png" alt="Lens of the Laser Beam">
-                    <img src="assets/imgs/LensActive.png" alt="Lens of the Laser Beam while active">
+                    <img src="./assets/imgs/Lens.png" alt="Image of a lens of the Laser Beam">
+                    <img src="./assets/imgs/LensActive.png" alt="Image of a lens of the Laser Beam while active">
                 </div>
-                <div class="col col-12">
+                <div class="col-12">
 
                     <section class="section-card">
                         <header>
                             <h1>Welcome to Skyrocket<sup>&reg;</sup></h1>
                         </header>
-                        <div class="px-4 mt-3">
-                            <p class="text-center">Want space rocks?</p>
-                            <p class="text-center">Want them fast?</p>
-                            <p class="text-center">Look no further!</p>
-                            <p>Founded on innovation and ambition, Skyrocket<sup>&reg;</sup> began as a visionary startup that achieved the unimaginable: altering the trajectory of an asteroid in 2084, <strong>safeguarding</strong> our planet and <strong>proving</strong> that the limits of space are meant to be challenged.</p>
-                            <p>Today, Skyrocket<sup>&reg;</sup> continues to push the boundaries of space technology, developing advanced spacecraft that redefine efficiency, safety, and capability. With cutting-edge propulsion, intelligent control systems, and modular versatility, our vehicles empower humanity to explore, transport, and harness the resources of the cosmos like never before.</p>
-                            <p>At Skyrocket<sup>&reg;</sup>, we don't just reach for the stars—<em>we make them reachable</em>.</p>
+                        <div class="px-4 mt-3 row">
+                            <p class="text-center">Want space rocks? Want them fast? Look no further!</p>
+                            <div class="col-12 col-lg-9">
+                                <p>Founded on innovation and ambition, Skyrocket<sup>&reg;</sup> began as a visionary startup that achieved the unimaginable: altering the trajectory of an asteroid in 2084, <strong>safeguarding</strong> our planet and <strong>proving</strong> that the limits of space are meant to be challenged.</p>
+                                <p>Today, Skyrocket<sup>&reg;</sup> continues to push the boundaries of space technology, developing advanced spacecraft that redefine efficiency, safety, and capability. With cutting-edge propulsion, intelligent control systems, and modular versatility, our vehicles empower humanity to explore, transport, and harness the resources of the cosmos like never before.</p>
+                                <p>At Skyrocket<sup>&reg;</sup>, we don't just reach for the stars—<em>we make them reachable</em>.</p>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <a href="./assets/imgs/Asteroids.png" target="_blank" class="zoom-image">
+                                    <img src="./assets/imgs/Asteroids.png" alt="Image that highlights the asteroids of the Solar System" class="img-fluid d-block m-auto">
+                                </a>
+                            </div>
                         </div>
                     </section>
                 </div>
 
-                <section class="col col-12">
+                <section class="col-12">
                     <header class="blur-bg">
                         <h2>Roadmap</h2>
                     </header>
@@ -103,16 +110,18 @@
                     </div>
                 </section>
                 
-                <div class="col col-12 col-xl-8">
+                <div class="col-12 col-xl-8">
                     <section class="section-card">
                         <header>
                             <h2>Our Product</h2>
                         </header>
                         <div class="row g-0">
-                            <div class="col col-12 col-lg-7">
-                                <img src="assets/imgs/Spaceship-BeautyShot.png" alt="Beauty shot of the spaceship" class="img-fluid h-100 content-border object-fit-cover">
+                            <div class="col-12 col-lg-7">
+                                <a href="./assets/imgs/Spaceship-BeautyShot.png" target="_blank" class="zoom-image">
+                                    <img src="./assets/imgs/Spaceship-BeautyShot.png" alt="Image of the advertised spaceship" class="img-fluid h-100 content-border object-fit-cover">
+                                </a>
                             </div>
-                            <div class="col col-12 col-lg-5 px-4">
+                            <div class="col-12 col-lg-5 px-4">
                                 <h3 class="mt-2">Flux Overflow</h3>
                                 <p>The Flux Overflow class deep space unmanned mining-transportation space vehicle is the <strong>most cost-efficient</strong> ship on the market.</p>
                                 <ul>
@@ -127,7 +136,7 @@
                     </section>
                 </div>
 
-                <div class="col col-md-6 mx-auto col-xl-4">
+                <div class="col-md-6 mx-auto col-xl-4">
                     <section class="section-card">
                         <header>
                             <h2>Our Offers</h2>

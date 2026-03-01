@@ -126,6 +126,7 @@ hr
 {
     border-top: .3rem dashed var(--bg-light-grey-color);
     border-radius: 1rem;
+    opacity: .5;
 }
 
 /* Links */
@@ -199,14 +200,68 @@ figcaption
     }
 }
 
+details
+{
+    margin-bottom: 1rem;
+}
+summary
+{
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    width: fit-content;
 
-/* #endregion */
+    transition: var(--transition-length);
+    background-color: var(--bg-dark-grey-color);
+}
+summary:hover, summary:focus
+{
+    background-color: var(--bg-light-grey-color);
+}
 
-/* #region Offers */
-.footnote
+table, th, td
+{
+    border: 1px solid white;
+}
+th, td
+{
+    padding: .5rem;
+    min-width: 6rem;
+}
+thead th
+{
+    text-align: end;
+}
+tbody td
+{
+    text-align: center;
+}
+caption
 {
     color: var(--text-muted-color);
     text-align: end;
+}
+
+@media print
+{
+    figure img
+    {
+        margin: auto;
+        max-height: 20rem;
+        width: fit-content;
+    }
+    table, td, th
+    {
+        border: .2rem solid black;
+    }
+}
+/* #endregion */
+
+/* #region Offers */
+.section-card p.footnote
+{
+    color: var(--text-muted-color);
+    text-align: end;
+    font-style: italic;
 }
 
 .cost-text

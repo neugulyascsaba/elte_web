@@ -54,6 +54,10 @@
 
 body
 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     background-color: var(--bg-color); /* Ha nem töltene be a kép, az ember nem fog megvakulni. */
     background-image: url(./../assets/imgs/Space.jpg);
     background-position: top;
@@ -62,15 +66,22 @@ body
     color: var(--text-color);
     font-family: var(--font);
 }
-.high-contrast p,
-.high-contrast a,
-.high-contrast li
+main
+{
+    /* A footer így mindig legalul lesz. */
+    flex: 1;
+}
+
+h1, h2, h3, nav
+{
+    font-family: var(--font-futuristic);
+}
+
+.high-contrast p, .high-contrast a, .high-contrast li
 {
     font-size: large;
 }
-.high-contrast h1,
-.high-contrast h2,
-.high-contrast h3
+.high-contrast h1, .high-contrast h2, .high-contrast h3
 {
     color: var(--primary-light-color);
 }
@@ -161,10 +172,14 @@ footer
 
     background-color: var(--bg-dark-grey-color);
 }
-footer p,
-footer address
+footer p, footer address
 {
     margin: 0;
+}
+
+video
+{
+    width: 100%;
 }
 
 /* #region The Ship */

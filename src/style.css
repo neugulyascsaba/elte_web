@@ -182,6 +182,66 @@ video
     width: 100%;
 }
 
+/* #region About Us */
+form
+{
+    width: fit-content;
+    margin: auto;
+}
+input, textarea
+{
+    padding: .2rem .5rem;
+    border: none;
+    border-top: .1rem solid var(--bg-light-grey-color);
+    border-bottom: .15rem solid var(--bg-light-grey-color);
+    border-radius: .5rem;
+    width: 100%;
+    max-width: 40rem;
+
+    color: var(--text-color);
+    background-color: var(--bg-dark-grey-color);
+}
+textarea
+{
+    min-height: 10rem;
+}
+::placeholder
+{
+    color: var(--text-muted-color);
+}
+input[type=submit]
+{
+    display: block;
+    margin-left: auto;
+    padding: .5rem 3rem;
+    width: fit-content;
+
+    background-color: var(--primary-dark-color);
+}
+input[type=submit]:hover
+{
+    background-color: var(--primary-color);
+}
+.high-contrast input[type=submit]
+{
+    color: #000;
+}
+.vertical-group
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.horizontal-group
+{
+    display: flex;
+}
+.horizontal-group label
+{
+    margin-left: .5rem;
+}
+/* #endregion */
+
 /* #region The Ship */
 figure
 {
@@ -228,7 +288,6 @@ summary
 {
     border-radius: .5rem;
     padding: 0 .5rem;
-    width: fit-content;
 
     transition: var(--transition-length);
     background-color: var(--bg-dark-grey-color);
@@ -314,8 +373,7 @@ caption
 {
     color: #000;
 }
-.high-contrast .buy-button,
-.high-contrast .rent-button
+.high-contrast .button
 {
     font-family: var(--font-futuristic);
     font-weight: bold;

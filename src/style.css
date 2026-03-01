@@ -13,12 +13,16 @@
     --text-muted-color: #adc2c5;
 
     --primary-dark-color: #334fb6;
-    --primary-color: #6196e6;
-    --primary-light-color: #8fc8f7;
+    --primary-color: #689ef0;
+    --primary-light-color: #85dbf5;
 
-    --secondary-color: #79f0d6;
+    --secondary-color: #8177da;
 
     --transition-length: 150ms;
+
+    --font-size: 1rem;
+    --font-size-large: 1.125rem;
+    --font-size-giga: 3rem;
 
     --font: "Work Sans";
     --font-futuristic: "Tomorrow";
@@ -38,6 +42,9 @@
     --primary-dark-color: #ff8800;
     --primary-color: #ffa600;
     --primary-light-color: #ffee00;
+
+    --font-size: 1.125rem;
+    --font-size-large: 1.25rem;
 }
 /* #endregion */
 
@@ -76,10 +83,9 @@ h1, h2, h3, nav
 {
     font-family: var(--font-futuristic);
 }
-
-.high-contrast p, .high-contrast a, .high-contrast li
+p, a, li
 {
-    font-size: large;
+    font-size: var(--font-size);
 }
 .high-contrast h1, .high-contrast h2, .high-contrast h3
 {
@@ -92,7 +98,7 @@ h1, h2, h3, nav
     position: absolute;
     left    : -9999px;
     margin-left: 5rem;
-    font-size: larger;
+    font-size: var(--font-size-large);
 }
 #content-btn a:focus
 {
@@ -346,7 +352,7 @@ caption
 .cost-text
 {
     font-family: var(--font-futuristic);
-    font-size: larger;
+    font-size: var(--font-size-large);
     letter-spacing: .2rem;
 }
 .button
@@ -358,7 +364,7 @@ caption
 
     color: var(--text-color);
     font-family: var(--font-barcode);
-    font-size: 3rem;
+    font-size: var(--font-size-giga);
 }
 .buy-button
 {
@@ -438,7 +444,7 @@ nav a:link, nav a:visited
 {
     color: var(--text-muted-color);
     font-variant: small-caps;
-    font-size: large;
+    font-size: var(--font-size-large);
     text-decoration: none;
 }
 nav a:hover, nav a:active

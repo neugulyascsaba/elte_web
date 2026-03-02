@@ -20,7 +20,7 @@
     --primary-color: #689ef0;
     --primary-light-color: #85dbf5;
 
-    --secondary-color: #8177da;
+    --secondary-color: #a675e7;
 
     --transition-length: 150ms;
 
@@ -97,6 +97,10 @@ p, a, li
 }
 /* #endregion */
 
+#content
+{
+    margin-top: 3rem;
+}
 #content-btn a
 {
     position: absolute;
@@ -337,19 +341,6 @@ caption
     color: var(--text-color);
 }
 
-@media print
-{
-    figure img
-    {
-        margin: auto;
-        max-height: 20rem;
-        width: fit-content;
-    }
-    table, td, th
-    {
-        border: .2rem solid black;
-    }
-}
 /* #endregion */
 
 /* #region Offers */
@@ -744,20 +735,6 @@ nav li a svg
     #event5
     {
         left: calc(100% - 2rem);
-    }
-}
-/* #endregion */
-
-/* #region Print */
-@media print
-{
-    .dont-print
-    {
-        display: none;
-    }
-    .rent-button
-    {
-        border: none;
     }
 }
 /* #endregion */

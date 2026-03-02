@@ -1,0 +1,35 @@
+@media print
+{
+    img
+    {
+        margin: auto;
+        max-height: 15rem;
+        width: fit-content;
+    }
+    table, td, th
+    {
+        border: .2rem solid black;
+    }
+
+    .dont-print, #menu, footer, video
+    {
+        display: none;
+    }
+    .rent-button
+    {
+        border: none;
+    }
+
+    .event .event-description
+    {
+        padding: 0;
+    }
+    #content-btn
+    {
+        display: none;
+    }
+    #content
+    {
+        margin-top: 0;
+    }
+}

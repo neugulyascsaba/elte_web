@@ -120,10 +120,6 @@ p, a, li
     background-color: var(--bg-color-transparent);
     backdrop-filter: var(--bg-blur);
 }
-.section-card p
-{
-    text-align: justify;
-}
 .high-contrast .section-card
 {
     border-color: white;
@@ -146,6 +142,10 @@ p, a, li
 .content-border
 {
     border: 1px inset var(--bg-light-grey-color);
+}
+.text-justify
+{
+    text-align: justify;
 }
 
 hr

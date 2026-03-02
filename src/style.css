@@ -1,11 +1,15 @@
 /* Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Tomorrow:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* md from below: 767px */
+/* lg from below: 991px */
+/* lg from above: 992px */
+
 /* #region Variables */
 :root
 {
     --bg-color: #09090A;
-    --bg-color-transparent: rgba(9, 9, 10, 0.67);
+    --bg-color-transparent: rgba(9, 9, 10, 0.8);
     --bg-dark-grey-color: #121319;
     --bg-light-grey-color: #282a33;
 
@@ -409,7 +413,7 @@ caption
 {
     position: sticky;
     top: 0;
-    margin: 0 4rem;
+    margin: 0 0rem;
     display: flex;
     align-items: center;
 
@@ -467,10 +471,14 @@ nav a:hover, nav a:active
 {
     color: var(--text-color);
 }
-nav a.active
+nav li.active a
 {
     font-weight: bold;
     border: .1rem solid var(--text-muted-color);
+}
+nav li a svg
+{
+    display: none;
 }
 
 #menu p
@@ -478,7 +486,10 @@ nav a.active
     position: relative;
     top: .5rem;
     margin-right: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
 
+    background-color: var(--bg-color);
     font-variant: small-caps;
     text-align: end;
 }
@@ -493,6 +504,65 @@ nav a.active
 #high-contrast-btn:hover
 {
     color: var(--primary-light-color);
+}
+
+@media screen and (max-width: 767px)
+{
+    #menu
+    {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+
+        border-top: .15rem solid var(--bg-light-grey-color);
+    }
+    #menu p
+    {
+        display: none;
+    }
+    #menu img
+    {
+        height: 2rem;
+        margin: .5rem;
+    }
+
+    nav ul
+    {
+        gap: 0;
+        justify-content: space-around;
+    }
+    nav a:link, nav a:visited
+    {
+        padding: 0;
+    }
+    nav li.active a
+    {
+        border: none;
+    }
+    nav a span
+    {
+        display: none;
+    }
+    nav li.active
+    {
+        border: .2rem solid var(--text-muted-color);
+    }
+    nav li
+    {
+        padding: .3rem;
+        border: .2rem solid transparent;
+        border-radius: 100%;
+    }
+    nav li a svg
+    {
+        display: block;
+    }
+
+    footer
+    {
+        padding-bottom: 5rem;
+    }
 }
 /* #endregion */
 

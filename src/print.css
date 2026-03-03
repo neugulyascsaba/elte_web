@@ -4,7 +4,7 @@
     {
         margin: auto;
         max-height: 15rem;
-        width: fit-content;
+        max-width: 15rem;
     }
     table, td, th
     {

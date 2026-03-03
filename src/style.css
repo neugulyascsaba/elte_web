@@ -233,8 +233,6 @@ textarea
 }
 input[type=submit]
 {
-    display: block;
-    margin-left: auto;
     padding: .5rem 3rem;
     width: fit-content;
 
@@ -247,6 +245,24 @@ input[type=submit]:hover
 .high-contrast input[type=submit]
 {
     color: #000;
+}
+input[type=button]
+{
+    padding: .3rem 2rem;
+    border: .2rem solid var(--text-color);
+    background-color: var(--bg-color);
+}
+input[type=button]:hover
+{
+    border-color: var(--text-muted-color);
+    background-color: var(--bg-dark-grey-color);
+}
+.button-group
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 1rem;
 }
 .vertical-group
 {

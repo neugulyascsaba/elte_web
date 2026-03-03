@@ -303,6 +303,24 @@ figcaption
     color: var(--text-muted-color);
     text-align: left;
 }
+
+details
+{
+    margin-bottom: 1rem;
+}
+summary
+{
+    border-radius: .5rem;
+    padding: 0 .5rem;
+
+    transition: var(--transition-length);
+    background-color: var(--bg-dark-grey-color);
+}
+summary:hover, summary:focus
+{
+    background-color: var(--bg-light-grey-color);
+}
+
 @media screen and (max-width: 767px)
 {
     /* figure
@@ -325,23 +343,14 @@ figcaption
         background-color: var(--bg-color-transparent);
         backdrop-filter: var(--bg-blur);
     } */
-}
-
-details
-{
-    margin-bottom: 1rem;
-}
-summary
-{
-    border-radius: .5rem;
-    padding: 0 .5rem;
-
-    transition: var(--transition-length);
-    background-color: var(--bg-dark-grey-color);
-}
-summary:hover, summary:focus
-{
-    background-color: var(--bg-light-grey-color);
+    details
+    {
+        margin: 0;
+    }
+    summary
+    {
+        padding: .5rem 1rem;
+    }
 }
 
 table, th, td

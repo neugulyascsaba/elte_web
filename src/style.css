@@ -145,7 +145,7 @@ p, a, li
     background-color: var(--bg-color-transparent);
     backdrop-filter: var(--bg-blur);
 }
-.text-justify
+.text-justify p
 {
     text-align: justify;
 }
@@ -346,7 +346,7 @@ summary:hover, summary:focus
 
 table, th, td
 {
-    border: 1px solid white;
+    border: .1rem solid white;
 }
 th, td
 {
@@ -360,6 +360,11 @@ thead th
 tbody td
 {
     text-align: center;
+}
+.corner-th
+{
+    border-top-color: transparent;
+    border-left-color: transparent;
 }
 caption
 {

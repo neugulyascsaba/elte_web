@@ -196,10 +196,14 @@ video
     width: 100%;
 }
 
+.zoom-image img
+{
+    border: .1rem solid transparent;
+}
 .zoom-image:hover img
 {
     opacity: .8;
-    border: 1px solid white;
+    border: .1rem solid white;
 
     cursor: zoom-in;
 }
@@ -569,6 +573,13 @@ nav li a svg
     footer
     {
         padding-bottom: 5rem;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    #menu
+    {
+        margin: 0 4rem;
     }
 }
 /* #endregion */

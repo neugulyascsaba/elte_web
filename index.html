@@ -58,95 +58,102 @@
         </header>
 
         <main id="content" class="container-fluid container-lg">
-            <div class="row g-3 border-xl">
+            <div class="row g-3">
 
-                <div class="d-none d-lg-block lens">
+                <!-- Interactive laser lens visual -->
+                <div class="col-12 d-none d-lg-block lens">
                     <img src="./assets/imgs/Lens.png" alt="Image of a lens of the Laser Beam">
                     <img src="./assets/imgs/LensActive.png" alt="Image of a lens of the Laser Beam while active">
-                </div>
+                </div> <!-- col -->
 
-                <article class="col-12">
-                    <section class="section-card text-justify">
-                        <header>
-                            <h1>Welcome to Skyrocket<sup>&reg;</sup></h1>
-                        </header>
-                        <div class="px-4 mt-3 row">
-                            <p class="text-center">Want space rocks? Want them fast? Look no further!</p>
-                            <div class="col-12 col-lg-9">
+                <!-- Introduction -->
+                <div class="col-12">
+                    <article class="content-card text-justify">
+                        <div class="row">
+                            <header class="col-12">
+                                <h1>Welcome to Skyrocket<sup>&reg;</sup></h1>
+                            </header> <!-- col -->
+                            <section class="col-12 col-lg-9 px-5 pt-3">
+                                <h2 class="text-center">Want space rocks? Want them fast? Look no further!</h2>
                                 <p>Founded on innovation and ambition, Skyrocket<sup>&reg;</sup> began as a visionary startup that achieved the unimaginable: altering the trajectory of an asteroid in 2084, <strong>safeguarding</strong> our planet and <strong>proving</strong> that the limits of space are meant to be challenged.</p>
                                 <p>Today, Skyrocket<sup>&reg;</sup> continues to push the boundaries of space technology, developing advanced spacecraft that redefine efficiency, safety, and capability. With cutting-edge propulsion, intelligent control systems, and modular versatility, our vehicles empower humanity to explore, transport, and harness the resources of the cosmos like never before.</p>
                                 <p>At Skyrocket<sup>&reg;</sup>, we don't just reach for the stars—<em>we make them reachable</em>.</p>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <a href="./assets/imgs/Asteroids.png" target="_blank" class="zoom-image">
-                                    <img src="./assets/imgs/Asteroids.png" alt="Image that highlights the asteroids of the Solar System" class="img-fluid d-block m-auto">
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                </article>
+                            </section> <!-- col -->
+                            <aside class="col-12 col-sm-5 col-lg-3 m-auto px-5">
+                                <figure>
+                                    <a href="./assets/imgs/Asteroids.png" target="_blank" class="zoom-image">
+                                        <img src="./assets/imgs/Asteroids-Thumbnail.png" alt="Image that highlights how many asteroids there are in the Solar System" class="img-fluid d-block m-auto content-border-transparent">
+                                    </a>
+                                    <figcaption>There are a lot of Near-Earth asteroids orbiting around the Sun.</figcaption>
+                                </figure>
+                            </aside> <!-- col -->
+                        </div> <!-- row -->
+                    </article>
+                </div> <!-- col -->
 
-                <section class="col-12">
+                <!-- Roadmap -->
+                <article class="col-12">
                     <header class="blur-bg">
                         <h2>Roadmap</h2>
                     </header>
-                    <div class="roadmap">
+                    <div id="roadmap">
                         <hr id="timeline-horizontal">
                         <div id="timeline-vertical"></div>
-                        <article class="event event-point" id="event1">
+                        <div class="event event-point" id="event1">
                             <div class="event-description">
                                 <p>Foundation</p>
                                 <p><time datetime="2084-06-09">6/9/2084</time></p>
                             </div>
-                        </article>
-                        <article class="event event-point" id="event2">
+                        </div>
+                        <div class="event event-point" id="event2">
                             <div class="event-description">
                                 <p>Pitch Deck Success</p>
                                 <p><time datetime="2086-12-11">12/11/2086</time></p>
                             </div>
-                        </article>
-                        <article class="event event-point" id="event3">
+                        </div>
+                        <div class="event event-point" id="event3">
                             <div class="event-description">
                                 <p>Market Success</p>
                                 <p><time datetime="2089-04-20">4/20/2089</time></p>
                             </div>
-                        </article>
-                        <article class="event" id="event-current">
+                        </div>
+                        <div class="event" id="event-current">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-caret-right-fill dont-print" viewBox="0 0 16 16">
                                 <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                             </svg>
                             <div class="event-description">
                                 <p>The Present</p>
                             </div>
-                        </article>
-                        <article class="event event-point" id="event4">
+                        </div>
+                        <div class="event event-point" id="event4">
                             <div class="event-description">
                                 <p>Skyrocket<sup>&reg;</sup> Space Station</p>
                                 <p><time datetime="2092">2092</time></p>
                             </div>
-                        </article>
-                        <article class="event event-point" id="event5">
+                        </div>
+                        <div class="event event-point" id="event5">
                             <div class="event-description">
                                 <p>Pusher Ship Project</p>
                                 <p><time datetime="2100">2100</time></p>
                             </div>
-                        </article>
+                        </div>
                     </div>
-                </section>
+                </article> <!-- col -->
                 
-                <article class="col-12 col-xl-8">
-                    <section class="section-card">
-                        <header>
-                            <h2>Our Product</h2>
-                        </header>
-                        <div class="row g-0">
-                            <div class="col-12 col-lg-7">
+                <!-- Our Product -->
+                <div class="col-12 col-xl-8">
+                    <article class="content-card">
+                        <div class="row">
+                            <header class="col-12">
+                                <h2>Our Product</h2>
+                            </header> <!-- col -->
+                            <div class="col-12 col-sm-8 col-lg-7 m-auto">
                                 <a href="./assets/imgs/Spaceship-BeautyShot.png" target="_blank" class="zoom-image">
-                                    <img src="./assets/imgs/Spaceship-BeautyShot.png" alt="Image of the advertised spaceship" class="img-fluid h-100 content-border object-fit-cover">
+                                    <img src="./assets/imgs/Spaceship-BeautyShot-Thumbnail.jpg" alt="Image of the advertised spaceship" class="img-fluid w-100 content-border">
                                 </a>
-                            </div>
-                            <div class="col-12 col-lg-5 px-4">
-                                <h3 class="mt-2">Flux Overflow</h3>
+                            </div> <!-- col -->
+                            <section class="col-12 col-lg-5">
+                                <h3 class="mt-3">Flux Overflow</h3>
                                 <p>The Flux Overflow class deep space unmanned mining-transportation space vehicle is the <strong>most cost-efficient</strong> ship on the market.</p>
                                 <ul>
                                     <li>Nuclear propulsion</li>
@@ -155,28 +162,31 @@
                                     <li>Push & tug engine modes</li>
                                     <li>Retractable radiators</li>
                                 </ul>
-                            </div>
-                        </div>
-                    </section>
-                </article>
+                            </section> <!-- col -->
+                        </div> <!-- row -->
+                    </article>
+                </div> <!-- col -->
 
-                <article class="col-md-6 mx-auto col-xl-4">
-                    <section class="section-card">
-                        <header>
-                            <h2>Our Offers</h2>
-                        </header>
-                        <div class="px-4 pt-2">
-                            <p class="mb-0">Now <strong>only</strong></p>
-                            <p class="ms-5 mb-2"><span class="cost-text"><strong>$4200M</strong></span> per ship</p>
-                            <button class="button buy-button ms-5">BUY</button>
-                            <hr>
-                            <p class="mb-0">Or rent it for</p>
-                            <p class="cost-text ms-5 mb-2"><strong>$1.5M/day*</strong></p>
-                            <button class="button rent-button ms-5">RENT</button>
-                            <p class="footnote mt-3">*Potential post-rent repair costs not accounted.</p>
-                        </div>
-                    </section>
-                </article>
+                <!-- Our Offers -->
+                <div class="col-md-6 mx-auto col-xl-4">
+                    <article class="content-card">
+                        <div class="row">
+                            <header class="col-12">
+                                <h2>Our Offers</h2>
+                            </header> <!-- col -->
+                            <div class="col-12 pt-3 px-5">
+                                <p class="mb-0">Now <strong>only</strong></p>
+                                <p class="ms-5 mb-2"><span class="cost-text"><strong>$4200M</strong></span> per ship</p>
+                                <button class="button buy-button ms-5">BUY</button>
+                                <hr>
+                                <p class="mb-0">Or rent it for</p>
+                                <p class="cost-text ms-5 mb-2"><strong>$1.5M/day*</strong></p>
+                                <button class="button rent-button ms-5">RENT</button>
+                                <p class="footnote mt-3">*Potential post-rent repair costs not accounted.</p>
+                            </div> <!-- col -->
+                        </div> <!-- row -->
+                    </article>
+                </div> <!-- col -->
 
             </div>
         </main>

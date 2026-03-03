@@ -38,7 +38,10 @@
 }
 .high-contrast
 {
-    --bg-color-transparent: rgba(0, 0, 0, 1);
+    --bg-color: #311b4e;
+    --bg-color-transparent: rgba(20, 20, 20, 1);
+    --bg-dark-grey-color: #23242b;
+    --bg-light-grey-color: #383a42;
     
     --text-color: #4cecff;
     --text-muted-color: #00ccff;
@@ -113,22 +116,21 @@ p, a, li
     position: static;
 }
 
-.section-card
+.content-card
 {
     border-bottom: .15rem solid var(--bg-dark-grey-color);
     border-top: .1rem solid var(--bg-light-grey-color);
     border-radius: 1rem;
-    height: 100%;
     
     overflow: hidden;
     background-color: var(--bg-color-transparent);
     backdrop-filter: var(--bg-blur);
 }
-.high-contrast .section-card
+.high-contrast .content-card
 {
     border-color: white;
 }
-.section-card header
+.content-card header
 {
     padding: .5rem;
 
@@ -142,10 +144,6 @@ p, a, li
     
     background-color: var(--bg-color-transparent);
     backdrop-filter: var(--bg-blur);
-}
-.content-border
-{
-    border: 1px inset var(--bg-light-grey-color);
 }
 .text-justify
 {
@@ -196,7 +194,11 @@ video
     width: 100%;
 }
 
-.zoom-image img
+.content-border
+{
+    border: .1rem inset var(--bg-light-grey-color);
+}
+.content-border-transparent
 {
     border: .1rem solid transparent;
 }
@@ -204,7 +206,10 @@ video
 {
     opacity: .8;
     border: .1rem solid white;
-
+    border-radius: .5rem;
+}
+.zoom-image:hover
+{
     cursor: zoom-in;
 }
 
@@ -296,11 +301,11 @@ figcaption
     margin-top: 1rem;
 
     color: var(--text-muted-color);
-    text-align: end;
+    text-align: left;
 }
 @media screen and (max-width: 767px)
 {
-    figure
+    /* figure
     {
         position: relative;
         max-height: 10rem;
@@ -319,7 +324,7 @@ figcaption
         text-align: start;
         background-color: var(--bg-color-transparent);
         backdrop-filter: var(--bg-blur);
-    }
+    } */
 }
 
 details
@@ -364,7 +369,7 @@ caption
 /* #endregion */
 
 /* #region Offers */
-.section-card p.footnote
+.content-card p.footnote
 {
     color: var(--text-muted-color);
     text-align: end;
@@ -622,12 +627,12 @@ nav li a svg
 }
 @media screen and (max-width: 991px)
 {
-    .roadmap
+    #roadmap
     {
         position: relative;
         margin: 0 1rem 2rem 1rem;
     }
-    .roadmap #timeline-horizontal
+    #roadmap #timeline-horizontal
     {
         display: none;
     }
@@ -666,12 +671,12 @@ nav li a svg
 }
 @media screen and (min-width: 992px)
 {
-    .roadmap
+    #roadmap
     {
         position: relative;
         margin: 2rem 4rem 7rem 4rem;
     }
-    .roadmap #timeline-horizontal
+    #roadmap #timeline-horizontal
     {
         display: block;
         border-color: var(--timeline-border-color);

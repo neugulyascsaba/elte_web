@@ -1,0 +1,57 @@
+
+/* #region Table */
+@media screen and (max-width: 767px)
+{
+    figure
+    {
+        position: relative;
+        max-height: 10rem;
+        overflow: hidden;
+    }
+    figcaption
+    {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        width: 80%;
+
+        color: var(--text-color);
+        text-align: start;
+        background-color: var(--bg-color-transparent);
+        backdrop-filter: var(--bg-blur);
+    }
+    details
+    {
+        margin: 0;
+    }
+    summary
+    {
+        padding: .5rem 1rem;
+    }
+}
+
+table, th, td
+{
+    border: .1rem solid white;
+}
+th, td
+{
+    padding: .5rem;
+    min-width: 6rem;
+}
+thead th
+{
+    text-align: end;
+}
+tbody td
+{
+    text-align: center;
+}
+.corner-th
+{
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+/* #endregion */

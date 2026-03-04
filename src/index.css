@@ -1,0 +1,215 @@
+
+/* #region Lens images */
+.lens
+{
+    padding: 0;
+    position: relative;
+    bottom: -1rem;
+    display: block;
+    margin: auto;
+    width: 33%;
+}
+.lens img
+{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.lens img:last-of-type
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: var(--transition-length);
+}
+.lens img:last-of-type:hover
+{
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Roadmap */
+.event .event-description p:first-of-type
+{
+    font-weight: bold;
+}
+@media screen and (max-width: 991px)
+{
+    #roadmap
+    {
+        position: relative;
+        margin: 0 1rem 2rem 1rem;
+    }
+    #roadmap #timeline-horizontal
+    {
+        display: none;
+    }
+    #timeline-vertical
+    {
+        position: absolute;
+        width: .4rem;
+        height: calc(3rem + 4rem * 5);
+        border-radius: 1rem;
+
+        background-color: var(--timeline-border-color);
+        opacity: .8;
+    }
+    .event
+    {
+        margin-left: 1rem;
+        border-radius: .5rem;
+
+        background-color: var(--bg-color-transparent);
+        backdrop-filter: var(--bg-blur);
+    }
+    #event-current svg
+    {
+        display: none;
+    }
+    .event .event-description
+    {
+        padding: .5rem;
+        border-bottom: .1rem solid var(--bg-light-grey-color);
+        border-radius: .5rem;
+    }
+    .event .event-description p
+    {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    #roadmap
+    {
+        position: relative;
+        margin: 2rem 4rem 7rem 4rem;
+    }
+    #roadmap #timeline-horizontal
+    {
+        display: block;
+        border-color: var(--timeline-border-color);
+        border-style: solid;
+        opacity: .8;
+    }
+    .event-point
+    {
+        border-radius: 100%;
+
+        background-color: var(--bg-dark-grey-color);
+        border: .5rem solid var(--primary-dark-color);
+    }
+    .event
+    {
+        position: absolute;
+        top: -.9rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .event .event-description
+    {
+        position: relative;
+        top: 2.2rem;
+        left: -3.5rem;
+        width: 8.2rem;
+        border-radius: .5rem;
+        
+        background-color: var(--bg-color-transparent);
+        backdrop-filter: var(--bg-blur);
+    }
+    .event .event-description p
+    {
+        margin: 0;
+        padding: 0 .2rem;
+
+        text-align: center;
+    }
+    #event-current
+    {
+        left: calc(50% - 1rem);
+    }
+    #event-current .event-description
+    {
+        position: relative;
+        top: 0;
+        left: -3rem;
+        width: 8rem;
+        border-radius: .5rem;
+
+        background-color: var(--bg-color-transparent);
+        backdrop-filter: var(--bg-blur);
+    }
+    #event-current .event-description p
+    {
+        margin: 0;
+        padding: 0 .2rem;
+
+        text-align: center;
+        font-weight: bold;
+    }
+    #event-current svg
+    {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        top: -.5rem;
+        left: calc(50% - 1.5rem);
+        
+        fill: var(--timeline-border-color);
+    }
+    #event1
+    {
+        left: 0;
+    }
+    #event2
+    {
+        left: calc(15%);
+    }
+    #event3
+    {
+        left: calc(35%);
+    }
+    #event4
+    {
+        left: calc(70% - 2rem);
+    }
+    #event5
+    {
+        left: calc(100% - 2rem);
+    }
+}
+/* #endregion */
+
+/* #region Offers */
+.cost-text
+{
+    font-family: var(--font-futuristic);
+    font-size: var(--font-size-large);
+    letter-spacing: .2rem;
+}
+.buy-button
+{
+    padding: .2rem 4rem;
+    background-color: var(--primary-dark-color);
+}
+.buy-button:hover
+{
+    background-color: var(--primary-color);
+}
+.high-contrast .buy-button
+{
+    color: #000;
+}
+.rent-button
+{
+    padding: 0 4rem;
+    border: .2rem solid var(--primary-dark-color);
+    background-color: var(--bg-color);
+}
+.rent-button:hover
+{
+    border-color: var(--primary-color);
+    background-color: var(--bg-light-grey-color);
+}
+/* #endregion */

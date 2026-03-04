@@ -71,7 +71,7 @@ body
     min-height: 100vh;
 
     background-color: var(--bg-color); /* Ha nem töltene be a kép, az ember nem fog megvakulni. */
-    background-image: url(./../assets/imgs/Space.jpg);
+    background-image: url(./../../assets/imgs/Space.jpg);
     background-position: top;
     background-size: cover;
 

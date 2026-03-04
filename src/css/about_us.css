@@ -19,7 +19,7 @@ input, textarea
 }
 textarea
 {
-    width: 100%;
+    max-width: 100%;
     min-height: 7rem;
 }
 ::placeholder
@@ -72,5 +72,10 @@ input[type=button]:hover
 .horizontal-group label
 {
     margin-left: .5rem;
+}
+
+video
+{
+    width: 100%;
 }
 /* #endregion */

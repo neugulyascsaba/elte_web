@@ -1,5 +1,23 @@
 @media print
 {
+    *
+    {
+        color: black;
+    }
+
+    #roadmap
+    {
+        display: flex;
+    }
+    .event
+    {
+        border-right: .1rem solid black;
+    }
+    .event:last-of-type
+    {
+        border: none;
+    }
+
     img
     {
         margin: auto;
@@ -31,5 +49,20 @@
     #content
     {
         margin-top: 0;
+    }
+
+    .button
+    {
+        display: none;
+    }
+    input[type=radio]
+    {
+        background-color: white;
+        border: .1rem solid black;
+    }
+    input[type=checkbox]
+    {
+        background-color: white;
+        border: .1rem solid black;
     }
 }
